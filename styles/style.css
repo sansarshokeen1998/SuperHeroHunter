@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+:root {
+    --mainColor: whitesmoke;
+    --cardColor:rgba(255, 255, 255, 0.281);
+}
+/* background video */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
+}
+
+/* navigation bar */
+.nav {
+    color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    padding: 2%;
+    height: 10px;
+    z-index: 10;
+    width: 100px;
+}
+.right {
+    padding: 2%;
+    font-size: 1.5rem;
+    font-family: Candara;
+    font-weight: 600;
+}
+.middle {
+    font-size: 4rem;
+    font-family: Ink Free;
+    font-weight: 900;
+    color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+}
+
+/* search option */
+.search {
+    display: flex;
+    justify-content: center;
+}
+.searchbar {
+    width: 60vh;
+    height: 6.5vh;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* search result container */
+.container {
+    width: 90%;
+    margin: 3% 5%;
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    justify-content: space-evenly;
+}
+.card {
+    width: 32vh;
+    height: 45vh;
+    background-color: var(--cardColor);
+    border: 1px solid goldenrod;
+    margin-top: 50px;
+    padding-top: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow:goldenrod 3px 3px 10px;
+}
+.poster {
+    width: 30vh;
+    height: 28vh;
+    border: 2px double goldenrod;
+    align-self: center;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    color: goldenrod;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Candara;
+}
+.heart-icon {
+    padding-top: 22px;
+    color: white;
+}
+.fa-solid {
+    color: red;
+}
+
+
+/* styles for hover */
+.glow:hover {
+    cursor: pointer;
+    text-shadow: var(--mainColor) 0 0 10px;
+    transform: scale(1.05);
+}
+.image:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.cardName:hover {
+    cursor: pointer;
+    text-decoration: underline 1px;
+    transform: scale(1.05);
+    /* color: black; */
+}
+.heart-icon:hover {
+    text-shadow: var(--mainColor) 0 0 10px;
+}

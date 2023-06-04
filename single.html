@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<html>
+
+<head>
+<!-- title --> 
+    <title>SuperHero Hunter</title>
+<!-- icon -->
+    <link rel="icon" href="./assets/superhero.svg" type="image/svg"/>
+<!-- added css -->
+    <link rel="stylesheet" href="./styles/single.css">
+<!-- added fontawesome -->
+    <script src="https://kit.fontawesome.com/f383b6eabf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- background -->
+    <video autoplay muted loop id="myVideo" class="glow">
+        <source src="./assets/space-to-view.mp4" type="video/mp4">
+    </video>
+
+<!-- nav bar -->
+    <div class="nav">
+    <!-- left part => icon -->
+        <left class="left">
+            <a href="index.html" style="text-decoration: none; color: inherit;"><p class="glow">Home</p></a>
+        </left>    
+    <!-- middle part => title-->
+        <middle class="middle">
+            <a href="single.html" style="text-decoration: none; color: inherit;"><p id="title" class="glow">Name</p></a>
+            
+        </middle>
+    <!-- right part => Favorites-->
+        <right class="right">
+            <a href="favorites.html" style="text-decoration: none; color: inherit;"><p class="glow">Favorites</p></a>
+        </right>
+    </div>
+
+<!-- Details -->
+    <div class="container">
+        <img id="photo" class="photo" src="assets/sample.png">
+        <div class="details">
+            <div class="category">
+                <p id="desc1" class="head">Description</p>
+                <p id="desc2" class="body"></p>
+            </div>
+            <div class="category">
+                <p id="comics1" class="head">Comics : </p>
+                <p id="comics2" class="body"></p>
+            </div>
+            <div class="category">
+                <p id="series1" class="head">Series : </p>
+                <p id="series2" class="body"></p>
+            </div>
+            <div class="category">
+                <p id="stories1" class="head">Stories : </p>
+                <p id="stories2" class="body"></p>
+            </div>       
+        </div>
+        <i id="icon" class=""></i>
+    </div>
+
+
+<!-- adding javascript -->
+    <script rel="typescript" src="./scripts/single.js"></script>
+
+</body>
+
+</html>
